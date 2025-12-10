@@ -1,0 +1,296 @@
+{
+    "table": "enroute_rate_of_climb",
+    "source": {
+      "aircraft": "Tecnam P2002 JF",
+      "section": "5 - Performances",
+      "condition": "en-route configuration",
+      "power_setting": "maximum_continuous",
+      "flaps": "UP",
+      "vx_kias": 56,
+      "temperature_c": [-25, 0, 15, 25, 50]
+    },
+    "weights": [
+      {
+        "weight_kg": 580,
+        "rows": [
+          {
+            "pressure_alt_ft": 0,
+            "pressure_alt_label": "S.L.",
+            "vy_kias": 66,
+            "rate_of_climb_ft_per_min": {
+              "-25": 1362,
+              "0": 1111,
+              "15": 888,
+              "25": 686,
+              "50": 974
+            }
+          },
+          {
+            "pressure_alt_ft": 2000,
+            "vy_kias": 66,
+            "rate_of_climb_ft_per_min": {
+              "-25": 1171,
+              "0": 925,
+              "15": 705,
+              "25": 507,
+              "50": 825
+            }
+          },
+          {
+            "pressure_alt_ft": 4000,
+            "vy_kias": 66,
+            "rate_of_climb_ft_per_min": {
+              "-25": 982,
+              "0": 739,
+              "15": 523,
+              "25": 328,
+              "50": 676
+            }
+          },
+          {
+            "pressure_alt_ft": 6000,
+            "vy_kias": 66,
+            "rate_of_climb_ft_per_min": {
+              "-25": 792,
+              "0": 554,
+              "15": 342,
+              "25": 151,
+              "50": 527
+            }
+          },
+          {
+            "pressure_alt_ft": 8000,
+            "vy_kias": 65,
+            "rate_of_climb_ft_per_min": {
+              "-25": 604,
+              "0": 370,
+              "15": 161,
+              "25": -27,
+              "50": 378
+            }
+          },
+          {
+            "pressure_alt_ft": 10000,
+            "vy_kias": 65,
+            "rate_of_climb_ft_per_min": {
+              "-25": 416,
+              "0": 186,
+              "15": -19,
+              "25": -203,
+              "50": 229
+            }
+          },
+          {
+            "pressure_alt_ft": 12000,
+            "vy_kias": 65,
+            "rate_of_climb_ft_per_min": {
+              "-25": 228,
+              "0": 3,
+              "15": -198,
+              "25": -379,
+              "50": 80
+            }
+          },
+          {
+            "pressure_alt_ft": 14000,
+            "vy_kias": 65,
+            "rate_of_climb_ft_per_min": {
+              "-25": 42,
+              "0": -179,
+              "15": -377,
+              "25": -555,
+              "50": -69
+            }
+          }
+        ]
+      },
+      {
+        "weight_kg": 550,
+        "rows": [
+          {
+            "pressure_alt_ft": 0,
+            "pressure_alt_label": "S.L.",
+            "vy_kias": 66,
+            "rate_of_climb_ft_per_min": {
+              "-25": 1463,
+              "0": 1201,
+              "15": 966,
+              "25": 755,
+              "50": 1057
+            }
+          },
+          {
+            "pressure_alt_ft": 2000,
+            "vy_kias": 66,
+            "rate_of_climb_ft_per_min": {
+              "-25": 1264,
+              "0": 1006,
+              "15": 775,
+              "25": 567,
+              "50": 901
+            }
+          },
+          {
+            "pressure_alt_ft": 4000,
+            "vy_kias": 66,
+            "rate_of_climb_ft_per_min": {
+              "-25": 1065,
+              "0": 811,
+              "15": 584,
+              "25": 380,
+              "50": 745
+            }
+          },
+          {
+            "pressure_alt_ft": 6000,
+            "vy_kias": 65,
+            "rate_of_climb_ft_per_min": {
+              "-25": 866,
+              "0": 617,
+              "15": 395,
+              "25": 194,
+              "50": 588
+            }
+          },
+          {
+            "pressure_alt_ft": 8000,
+            "vy_kias": 65,
+            "rate_of_climb_ft_per_min": {
+              "-25": 669,
+              "0": 424,
+              "15": 205,
+              "25": 8,
+              "50": 432
+            }
+          },
+          {
+            "pressure_alt_ft": 10000,
+            "vy_kias": 65,
+            "rate_of_climb_ft_per_min": {
+              "-25": 472,
+              "0": 231,
+              "15": 17,
+              "25": -177,
+              "50": 276
+            }
+          },
+          {
+            "pressure_alt_ft": 12000,
+            "vy_kias": 65,
+            "rate_of_climb_ft_per_min": {
+              "-25": 275,
+              "0": 39,
+              "15": -172,
+              "25": -362,
+              "50": 120
+            }
+          },
+          {
+            "pressure_alt_ft": 14000,
+            "vy_kias": 64,
+            "rate_of_climb_ft_per_min": {
+              "-25": 80,
+              "0": -152,
+              "15": -359,
+              "25": -545,
+              "50": -37
+            }
+          }
+        ]
+      },
+      {
+        "weight_kg": 500,
+        "rows": [
+          {
+            "pressure_alt_ft": 0,
+            "pressure_alt_label": "S.L.",
+            "vy_kias": 66,
+            "rate_of_climb_ft_per_min": {
+              "-25": 1656,
+              "0": 1370,
+              "15": 1115,
+              "25": 884,
+              "50": 1213
+            }
+          },
+          {
+            "pressure_alt_ft": 2000,
+            "vy_kias": 66,
+            "rate_of_climb_ft_per_min": {
+              "-25": 1439,
+              "0": 1157,
+              "15": 906,
+              "25": 680,
+              "50": 1043
+            }
+          },
+          {
+            "pressure_alt_ft": 4000,
+            "vy_kias": 65,
+            "rate_of_climb_ft_per_min": {
+              "-25": 1222,
+              "0": 945,
+              "15": 699,
+              "25": 476,
+              "50": 873
+            }
+          },
+          {
+            "pressure_alt_ft": 6000,
+            "vy_kias": 65,
+            "rate_of_climb_ft_per_min": {
+              "-25": 1006,
+              "0": 734,
+              "15": 492,
+              "25": 273,
+              "50": 703
+            }
+          },
+          {
+            "pressure_alt_ft": 8000,
+            "vy_kias": 65,
+            "rate_of_climb_ft_per_min": {
+              "-25": 791,
+              "0": 524,
+              "15": 286,
+              "25": 71,
+              "50": 533
+            }
+          },
+          {
+            "pressure_alt_ft": 10000,
+            "vy_kias": 64,
+            "rate_of_climb_ft_per_min": {
+              "-25": 576,
+              "0": 314,
+              "15": 80,
+              "25": -131,
+              "50": 363
+            }
+          },
+          {
+            "pressure_alt_ft": 12000,
+            "vy_kias": 64,
+            "rate_of_climb_ft_per_min": {
+              "-25": 362,
+              "0": 105,
+              "15": -125,
+              "25": -332,
+              "50": 192
+            }
+          },
+          {
+            "pressure_alt_ft": 14000,
+            "vy_kias": 64,
+            "rate_of_climb_ft_per_min": {
+              "-25": 149,
+              "0": -103,
+              "15": -329,
+              "25": -532,
+              "50": 22
+            }
+          }
+        ]
+      }
+    ]
+  }
