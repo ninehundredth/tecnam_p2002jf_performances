@@ -1,0 +1,51 @@
+{
+    "table": "stall_speed",
+    "source": {
+      "aircraft": "Tecnam P2002 JF",
+      "section": "5 - Performances",
+      "weight_kg": 580,
+      "throttle": "IDLE",
+      "cg": "most_forward_26_percent",
+      "ground_effect": "none",
+      "altitude_loss_ft_typical": 150,
+      "altitude_loss_bank_limit_deg": 30
+    },
+    "columns": {
+      "bank_angle_deg": "bank angle in degrees",
+      "flaps_0": { "kias": "stall speed in KIAS", "kcas": "stall speed in KCAS" },
+      "flaps_takeoff": { "kias": "stall speed in KIAS", "kcas": "stall speed in KCAS" },
+      "flaps_full": { "kias": "stall speed in KIAS", "kcas": "stall speed in KCAS" }
+    },
+    "rows": [
+      {
+        "bank_angle_deg": 0,
+        "flaps_0":      { "kias": 40, "kcas": 49 },
+        "flaps_takeoff":{ "kias": 35, "kcas": 46 },
+        "flaps_full":   { "kias": 30, "kcas": 39 }
+      },
+      {
+        "bank_angle_deg": 15,
+        "flaps_0":      { "kias": 41, "kcas": 50 },
+        "flaps_takeoff":{ "kias": 36, "kcas": 47 },
+        "flaps_full":   { "kias": 31, "kcas": 40 }
+      },
+      {
+        "bank_angle_deg": 30,
+        "flaps_0":      { "kias": 45, "kcas": 53 },
+        "flaps_takeoff":{ "kias": 40, "kcas": 49 },
+        "flaps_full":   { "kias": 34, "kcas": 42 }
+      },
+      {
+        "bank_angle_deg": 45,
+        "flaps_0":      { "kias": 53, "kcas": 58 },
+        "flaps_takeoff":{ "kias": 47, "kcas": 54 },
+        "flaps_full":   { "kias": 41, "kcas": 47 }
+      },
+      {
+        "bank_angle_deg": 60,
+        "flaps_0":      { "kias": 67, "kcas": 70 },
+        "flaps_takeoff":{ "kias": 61, "kcas": 65 },
+        "flaps_full":   { "kias": 53, "kcas": 56 }
+      }
+    ]
+  }

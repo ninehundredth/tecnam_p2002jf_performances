@@ -1,0 +1,371 @@
+{
+    "table": "landing_performance",
+    "source": {
+      "aircraft": "Tecnam P2002 JF",
+      "section": "5 - Performances",
+      "runway": "grass",
+      "flaps": "LAND",
+      "short_final_speed_kias": 51,
+      "throttle": "IDLE",
+      "temperature_c": [-25, 0, 15, 25, 50],
+      "corrections": {
+        "headwind": "-5 m per kt",
+        "tailwind": "+11 m per kt",
+        "paved_runway": "-2% to ground roll",
+        "runway_slope": "-2.5% to ground roll per +1% slope"
+      }
+    },
+    "weights": [
+      {
+        "weight_kg": 580,
+        "rows": [
+          {
+            "pressure_alt_ft": 0,
+            "pressure_alt_label": "S.L.",
+            "segment": "ground_roll",
+            "distance_m": { "-25": 124, "0": 136, "15": 149, "25": 161, "50": 144 }
+          },
+          {
+            "pressure_alt_ft": 0,
+            "pressure_alt_label": "S.L.",
+            "segment": "over_50ft",
+            "distance_m": { "-25": 243, "0": 267, "15": 292, "25": 316, "50": 282 }
+          },
+          {
+            "pressure_alt_ft": 1000,
+            "segment": "ground_roll",
+            "distance_m": { "-25": 128, "0": 141, "15": 154, "25": 167, "50": 148 }
+          },
+          {
+            "pressure_alt_ft": 1000,
+            "segment": "over_50ft",
+            "distance_m": { "-25": 252, "0": 277, "15": 302, "25": 328, "50": 290 }
+          },
+          {
+            "pressure_alt_ft": 2000,
+            "segment": "ground_roll",
+            "distance_m": { "-25": 133, "0": 146, "15": 160, "25": 173, "50": 152 }
+          },
+          {
+            "pressure_alt_ft": 2000,
+            "segment": "over_50ft",
+            "distance_m": { "-25": 261, "0": 287, "15": 314, "25": 340, "50": 299 }
+          },
+          {
+            "pressure_alt_ft": 3000,
+            "segment": "ground_roll",
+            "distance_m": { "-25": 138, "0": 152, "15": 166, "25": 180, "50": 157 }
+          },
+          {
+            "pressure_alt_ft": 3000,
+            "segment": "over_50ft",
+            "distance_m": { "-25": 271, "0": 298, "15": 325, "25": 353, "50": 308 }
+          },
+          {
+            "pressure_alt_ft": 4000,
+            "segment": "ground_roll",
+            "distance_m": { "-25": 143, "0": 158, "15": 172, "25": 186, "50": 162 }
+          },
+          {
+            "pressure_alt_ft": 4000,
+            "segment": "over_50ft",
+            "distance_m": { "-25": 281, "0": 309, "15": 338, "25": 366, "50": 317 }
+          },
+          {
+            "pressure_alt_ft": 5000,
+            "segment": "ground_roll",
+            "distance_m": { "-25": 149, "0": 164, "15": 178, "25": 193, "50": 167 }
+          },
+          {
+            "pressure_alt_ft": 5000,
+            "segment": "over_50ft",
+            "distance_m": { "-25": 292, "0": 321, "15": 350, "25": 380, "50": 327 }
+          },
+          {
+            "pressure_alt_ft": 6000,
+            "segment": "ground_roll",
+            "distance_m": { "-25": 154, "0": 170, "15": 185, "25": 201, "50": 172 }
+          },
+          {
+            "pressure_alt_ft": 6000,
+            "segment": "over_50ft",
+            "distance_m": { "-25": 303, "0": 333, "15": 364, "25": 394, "50": 337 }
+          },
+          {
+            "pressure_alt_ft": 7000,
+            "segment": "ground_roll",
+            "distance_m": { "-25": 160, "0": 176, "15": 192, "25": 209, "50": 177 }
+          },
+          {
+            "pressure_alt_ft": 7000,
+            "segment": "over_50ft",
+            "distance_m": { "-25": 314, "0": 346, "15": 378, "25": 410, "50": 348 }
+          },
+          {
+            "pressure_alt_ft": 8000,
+            "segment": "ground_roll",
+            "distance_m": { "-25": 166, "0": 183, "15": 200, "25": 217, "50": 183 }
+          },
+          {
+            "pressure_alt_ft": 8000,
+            "segment": "over_50ft",
+            "distance_m": { "-25": 327, "0": 360, "15": 393, "25": 425, "50": 359 }
+          },
+          {
+            "pressure_alt_ft": 9000,
+            "segment": "ground_roll",
+            "distance_m": { "-25": 173, "0": 190, "15": 208, "25": 225, "50": 188 }
+          },
+          {
+            "pressure_alt_ft": 9000,
+            "segment": "over_50ft",
+            "distance_m": { "-25": 339, "0": 374, "15": 408, "25": 442, "50": 370 }
+          },
+          {
+            "pressure_alt_ft": 10000,
+            "segment": "ground_roll",
+            "distance_m": { "-25": 180, "0": 198, "15": 216, "25": 234, "50": 194 }
+          },
+          {
+            "pressure_alt_ft": 10000,
+            "segment": "over_50ft",
+            "distance_m": { "-25": 353, "0": 388, "15": 424, "25": 460, "50": 382 }
+          }
+        ]
+      },
+      {
+        "weight_kg": 550,
+        "rows": [
+          {
+            "pressure_alt_ft": 0,
+            "pressure_alt_label": "S.L.",
+            "segment": "ground_roll",
+            "distance_m": { "-25": 111, "0": 122, "15": 134, "25": 145, "50": 129 }
+          },
+          {
+            "pressure_alt_ft": 0,
+            "pressure_alt_label": "S.L.",
+            "segment": "over_50ft",
+            "distance_m": { "-25": 218, "0": 240, "15": 262, "25": 284, "50": 253 }
+          },
+          {
+            "pressure_alt_ft": 1000,
+            "segment": "ground_roll",
+            "distance_m": { "-25": 115, "0": 127, "15": 138, "25": 150, "50": 133 }
+          },
+          {
+            "pressure_alt_ft": 1000,
+            "segment": "over_50ft",
+            "distance_m": { "-25": 226, "0": 249, "15": 272, "25": 295, "50": 261 }
+          },
+          {
+            "pressure_alt_ft": 2000,
+            "segment": "ground_roll",
+            "distance_m": { "-25": 120, "0": 132, "15": 144, "25": 156, "50": 137 }
+          },
+          {
+            "pressure_alt_ft": 2000,
+            "segment": "over_50ft",
+            "distance_m": { "-25": 235, "0": 258, "15": 282, "25": 306, "50": 269 }
+          },
+          {
+            "pressure_alt_ft": 3000,
+            "segment": "ground_roll",
+            "distance_m": { "-25": 124, "0": 137, "15": 149, "25": 161, "50": 141 }
+          },
+          {
+            "pressure_alt_ft": 3000,
+            "segment": "over_50ft",
+            "distance_m": { "-25": 243, "0": 268, "15": 293, "25": 317, "50": 277 }
+          },
+          {
+            "pressure_alt_ft": 4000,
+            "segment": "ground_roll",
+            "distance_m": { "-25": 129, "0": 142, "15": 155, "25": 168, "50": 145 }
+          },
+          {
+            "pressure_alt_ft": 4000,
+            "segment": "over_50ft",
+            "distance_m": { "-25": 253, "0": 278, "15": 304, "25": 329, "50": 285 }
+          },
+          {
+            "pressure_alt_ft": 5000,
+            "segment": "ground_roll",
+            "distance_m": { "-25": 134, "0": 147, "15": 160, "25": 174, "50": 150 }
+          },
+          {
+            "pressure_alt_ft": 5000,
+            "segment": "over_50ft",
+            "distance_m": { "-25": 262, "0": 289, "15": 315, "25": 342, "50": 294 }
+          },
+          {
+            "pressure_alt_ft": 6000,
+            "segment": "ground_roll",
+            "distance_m": { "-25": 139, "0": 153, "15": 167, "25": 181, "50": 154 }
+          },
+          {
+            "pressure_alt_ft": 6000,
+            "segment": "over_50ft",
+            "distance_m": { "-25": 272, "0": 300, "15": 327, "25": 355, "50": 303 }
+          },
+          {
+            "pressure_alt_ft": 7000,
+            "segment": "ground_roll",
+            "distance_m": { "-25": 144, "0": 159, "15": 173, "25": 188, "50": 159 }
+          },
+          {
+            "pressure_alt_ft": 7000,
+            "segment": "over_50ft",
+            "distance_m": { "-25": 283, "0": 311, "15": 340, "25": 368, "50": 313 }
+          },
+          {
+            "pressure_alt_ft": 8000,
+            "segment": "ground_roll",
+            "distance_m": { "-25": 150, "0": 165, "15": 180, "25": 195, "50": 164 }
+          },
+          {
+            "pressure_alt_ft": 8000,
+            "segment": "over_50ft",
+            "distance_m": { "-25": 294, "0": 323, "15": 353, "25": 383, "50": 322 }
+          },
+          {
+            "pressure_alt_ft": 9000,
+            "segment": "ground_roll",
+            "distance_m": { "-25": 155, "0": 171, "15": 187, "25": 202, "50": 169 }
+          },
+          {
+            "pressure_alt_ft": 9000,
+            "segment": "over_50ft",
+            "distance_m": { "-25": 305, "0": 336, "15": 367, "25": 398, "50": 333 }
+          },
+          {
+            "pressure_alt_ft": 10000,
+            "segment": "ground_roll",
+            "distance_m": { "-25": 162, "0": 178, "15": 194, "25": 210, "50": 175 }
+          },
+          {
+            "pressure_alt_ft": 10000,
+            "segment": "over_50ft",
+            "distance_m": { "-25": 317, "0": 349, "15": 381, "25": 413, "50": 343 }
+          }
+        ]
+      },
+      {
+        "weight_kg": 500,
+        "rows": [
+          {
+            "pressure_alt_ft": 0,
+            "pressure_alt_label": "S.L.",
+            "segment": "ground_roll",
+            "distance_m": { "-25": 92, "0": 101, "15": 110, "25": 120, "50": 107 }
+          },
+          {
+            "pressure_alt_ft": 0,
+            "pressure_alt_label": "S.L.",
+            "segment": "over_50ft",
+            "distance_m": { "-25": 180, "0": 199, "15": 217, "25": 235, "50": 209 }
+          },
+          {
+            "pressure_alt_ft": 1000,
+            "segment": "ground_roll",
+            "distance_m": { "-25": 95, "0": 105, "15": 114, "25": 124, "50": 110 }
+          },
+          {
+            "pressure_alt_ft": 1000,
+            "segment": "over_50ft",
+            "distance_m": { "-25": 187, "0": 206, "15": 225, "25": 244, "50": 216 }
+          },
+          {
+            "pressure_alt_ft": 2000,
+            "segment": "ground_roll",
+            "distance_m": { "-25": 99, "0": 109, "15": 119, "25": 129, "50": 113 }
+          },
+          {
+            "pressure_alt_ft": 2000,
+            "segment": "over_50ft",
+            "distance_m": { "-25": 194, "0": 214, "15": 233, "25": 253, "50": 222 }
+          },
+          {
+            "pressure_alt_ft": 3000,
+            "segment": "ground_roll",
+            "distance_m": { "-25": 102, "0": 113, "15": 123, "25": 133, "50": 117 }
+          },
+          {
+            "pressure_alt_ft": 3000,
+            "segment": "over_50ft",
+            "distance_m": { "-25": 201, "0": 221, "15": 242, "25": 262, "50": 229 }
+          },
+          {
+            "pressure_alt_ft": 4000,
+            "segment": "ground_roll",
+            "distance_m": { "-25": 106, "0": 117, "15": 128, "25": 138, "50": 120 }
+          },
+          {
+            "pressure_alt_ft": 4000,
+            "segment": "over_50ft",
+            "distance_m": { "-25": 209, "0": 230, "15": 251, "25": 272, "50": 236 }
+          },
+          {
+            "pressure_alt_ft": 5000,
+            "segment": "ground_roll",
+            "distance_m": { "-25": 110, "0": 122, "15": 133, "25": 144, "50": 124 }
+          },
+          {
+            "pressure_alt_ft": 5000,
+            "segment": "over_50ft",
+            "distance_m": { "-25": 217, "0": 239, "15": 260, "25": 282, "50": 243 }
+          },
+          {
+            "pressure_alt_ft": 6000,
+            "segment": "ground_roll",
+            "distance_m": { "-25": 115, "0": 126, "15": 138, "25": 149, "50": 128 }
+          },
+          {
+            "pressure_alt_ft": 6000,
+            "segment": "over_50ft",
+            "distance_m": { "-25": 225, "0": 248, "15": 270, "25": 293, "50": 251 }
+          },
+          {
+            "pressure_alt_ft": 7000,
+            "segment": "ground_roll",
+            "distance_m": { "-25": 119, "0": 131, "15": 143, "25": 155, "50": 132 }
+          },
+          {
+            "pressure_alt_ft": 7000,
+            "segment": "over_50ft",
+            "distance_m": { "-25": 234, "0": 257, "15": 281, "25": 304, "50": 258 }
+          },
+          {
+            "pressure_alt_ft": 8000,
+            "segment": "ground_roll",
+            "distance_m": { "-25": 124, "0": 136, "15": 149, "25": 161, "50": 136 }
+          },
+          {
+            "pressure_alt_ft": 8000,
+            "segment": "over_50ft",
+            "distance_m": { "-25": 243, "0": 267, "15": 292, "25": 316, "50": 266 }
+          },
+          {
+            "pressure_alt_ft": 9000,
+            "segment": "ground_roll",
+            "distance_m": { "-25": 128, "0": 141, "15": 154, "25": 167, "50": 140 }
+          },
+          {
+            "pressure_alt_ft": 9000,
+            "segment": "over_50ft",
+            "distance_m": { "-25": 252, "0": 278, "15": 303, "25": 329, "50": 275 }
+          },
+          {
+            "pressure_alt_ft": 10000,
+            "segment": "ground_roll",
+            "distance_m": { "-25": 134, "0": 147, "15": 160, "25": 174, "50": 144 }
+          },
+          {
+            "pressure_alt_ft": 10000,
+            "segment": "over_50ft",
+            "distance_m": { "-25": 262, "0": 289, "15": 315, "25": 341, "50": 284 }
+          }
+        ]
+      }
+    ]
+  }
