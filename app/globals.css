@@ -202,6 +202,156 @@ body {
   color: #333;
 }
 
+/* Mode selector buttons container */
+.mode-selector-container {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Mode selector button base styles */
+.mode-button {
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 2px solid white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.mode-button-active {
+  color: white;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.mode-button-inactive {
+  color: #666666;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Calculate button */
+.calculate-button {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.calculate-button-enabled {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  opacity: 1;
+}
+
+.calculate-button-disabled {
+  background: #cccccc;
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.calculate-button-enabled:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(102, 126, 234, 0.4);
+}
+
+/* Debug toggle button */
+.debug-toggle-button {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #667eea;
+  background: white;
+  border: 2px solid #667eea;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.debug-toggle-button-expanded {
+  margin-bottom: 1rem;
+}
+
+/* Debug container */
+.debug-container {
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  font-size: 0.85rem;
+  font-family: monospace;
+}
+
+/* Debug section heading */
+.debug-section-heading {
+  color: #667eea;
+  margin-bottom: 0.5rem;
+}
+
+/* Debug info box */
+.debug-info-box {
+  background: white;
+  padding: 0.75rem;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+
+.debug-info-box-last {
+  margin-bottom: 0;
+}
+
+/* Debug list */
+.debug-list {
+  margin-top: 0.5rem;
+  padding-left: 1.5rem;
+}
+
+.debug-list-item {
+  margin-bottom: 0.25rem;
+}
+
+/* Unit text (small gray text) */
+.unit-text {
+  font-size: 0.8rem;
+  color: #999;
+}
+
+/* Debug corrections detail */
+.debug-corrections-detail {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+/* Debug section spacing */
+.debug-section-spacing {
+  margin-bottom: 1.5rem;
+}
+
+/* Debug wrapper with top margin */
+.debug-wrapper {
+  margin-top: 1.5rem;
+}
+
+/* Base values info box */
+.base-values-box {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #f0f0f0;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.base-values-content {
+  margin-top: 0.5rem;
+}
+
 @media (max-width: 768px) {
   body {
     padding: 1rem;

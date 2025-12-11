@@ -1,6 +1,7 @@
 export type RunwaySurface = 'grass' | 'concrete' | 'asphalt';
 export type CalculationType = 'takeoff' | 'landing';
 export type SegmentType = 'ground_roll' | 'over_50ft';
+export type ClimbSpeed = 64 | 65 | 66;
 
 export interface CalculationInputs {
   weight: number;
@@ -92,6 +93,97 @@ export interface PerformanceData {
       paved_runway?: string;
       runway_slope?: string;
     };
+  };
+}
+
+// Rate of climb types
+export interface RateOfClimbInputs {
+  weight: number;
+  elevation: number; // Runway elevation in feet
+  temperature: number;
+  qnh: number;
+}
+
+export interface RateOfClimbResults {
+  pressureAltitude: number;
+  rateOfClimb: number; // ft/min
+  baseRateOfClimb: number; // ft/min (before any corrections, if needed)
+  climbSpeed: number; // kias (best rate of climb speed)
+  debug?: CalculationDebugInfo;
+}
+
+// Cruise performance types
+export type CruiseInputMode = 'kias' | 'ktas' | 'rpm';
+
+export interface CruiseInputs {
+  elevation: number; // Cruise altitude in feet
+  temperature: number; // OAT at cruise altitude
+  qnh: number;
+  inputMode: CruiseInputMode;
+  kias?: number; // Indicated airspeed in knots (if inputMode is 'kias')
+  ktas?: number; // True airspeed in knots (if inputMode is 'ktas')
+  rpm?: number; // Engine RPM (if inputMode is 'rpm')
+}
+
+export interface CruiseResults {
+  pressureAltitude: number;
+  densityAltitude: number;
+  ktas: number; // True airspeed from table
+  kias: number; // Indicated airspeed (converted from KTAS)
+  fuelConsumption: number; // LPH (liters per hour)
+  powerPercent: number; // Engine power percentage
+  rpm?: number; // RPM setting (if found)
+  debug?: {
+    pressureAltitude: number;
+    densityAltitude: number;
+    densityRatio: number;
+    isaCondition: string;
+    conversionSteps: string[];
+  };
+}
+
+// Internal types for cruise performance data
+export interface CruisePerformanceRow {
+  rpm: number;
+  isa_minus_30: { power_percent: number; ktas: number; fuel_flow_lph: number };
+  isa: { power_percent: number; ktas: number; fuel_flow_lph: number };
+  isa_plus_30: { power_percent: number; ktas: number; fuel_flow_lph: number };
+}
+
+export interface CruisePerformanceData {
+  table: string;
+  source: {
+    aircraft: string;
+    section: string;
+    subsection?: string;
+    weight_kg: number;
+    temperatures: string[];
+  };
+  pressure_altitudes: Array<{
+    pressure_alt_ft: number;
+    rows: CruisePerformanceRow[];
+  }>;
+}
+
+// Internal types for rate of climb data
+export interface RateOfClimbDataRow {
+  pressure_alt_ft: number;
+  pressure_alt_label?: string;
+  vy_kias: number;
+  rate_of_climb_ft_per_min: {
+    [key: string]: number;
+  };
+}
+
+export interface RateOfClimbDataWeight {
+  weight_kg: number;
+  rows: RateOfClimbDataRow[];
+}
+
+export interface RateOfClimbData {
+  weights: RateOfClimbDataWeight[];
+  source?: {
+    [key: string]: any;
   };
 }
 
