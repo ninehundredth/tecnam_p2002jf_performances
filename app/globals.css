@@ -13,7 +13,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: 
+    linear-gradient(135deg, rgba(102, 126, 234, 0.85) 0%, rgba(118, 75, 162, 0.85) 100%),
+    url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?ixlib=rb-4.0.3&auto=format&fit=crop&w=2074&q=80') center/cover no-repeat;
+  background-attachment: fixed;
   min-height: 100vh;
 }
 
@@ -228,7 +231,7 @@ body {
 }
 
 .mode-button-inactive {
-  color: #666666;
+  color: #999999;
   background: rgba(255, 255, 255, 0.1);
 }
 
