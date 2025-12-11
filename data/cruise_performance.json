@@ -1,0 +1,228 @@
+{
+    "table": "cruise_performance",
+    "source": {
+      "aircraft": "Tecnam P2002 JF",
+      "section": "5 - Performances",
+      "subsection": "10. Cruise Performances",
+      "weight_kg": 580,
+      "temperatures": ["ISA-30", "ISA", "ISA+30"]
+    },
+    "pressure_altitudes": [
+      {
+        "pressure_alt_ft": 0,
+        "rows": [
+          {
+            "rpm": 2361,
+            "isa_minus_30": { "power_percent": 120, "ktas": 110, "fuel_flow_lph": 32.2 },
+            "isa":          { "power_percent": 100, "ktas": 106, "fuel_flow_lph": 26.8 },
+            "isa_plus_30":  { "power_percent": 84,  "ktas": 103, "fuel_flow_lph": 22.6 }
+          },
+          {
+            "rpm": 2318,
+            "isa_minus_30": { "power_percent": 113, "ktas": 108, "fuel_flow_lph": 30.5 },
+            "isa":          { "power_percent": 94,  "ktas": 104, "fuel_flow_lph": 25.3 },
+            "isa_plus_30":  { "power_percent": 79,  "ktas": 100, "fuel_flow_lph": 21.2 }
+          },
+          {
+            "rpm": 2272,
+            "isa_minus_30": { "power_percent": 107, "ktas": 106, "fuel_flow_lph": 28.8 },
+            "isa":          { "power_percent": 88,  "ktas": 101, "fuel_flow_lph": 23.8 },
+            "isa_plus_30":  { "power_percent": 74,  "ktas": 97,  "fuel_flow_lph": 19.8 }
+          },
+          {
+            "rpm": 2221,
+            "isa_minus_30": { "power_percent": 100, "ktas": 103, "fuel_flow_lph": 26.9 },
+            "isa":          { "power_percent": 82,  "ktas": 99,  "fuel_flow_lph": 22.1 },
+            "isa_plus_30":  { "power_percent": 68,  "ktas": 94,  "fuel_flow_lph": 18.3 }
+          },
+          {
+            "rpm": 2165,
+            "isa_minus_30": { "power_percent": 93, "ktas": 100, "fuel_flow_lph": 25.0 },
+            "isa":          { "power_percent": 76, "ktas": 95,  "fuel_flow_lph": 20.4 },
+            "isa_plus_30":  { "power_percent": 62, "ktas": 90,  "fuel_flow_lph": 16.8 }
+          },
+          {
+            "rpm": 2103,
+            "isa_minus_30": { "power_percent": 85, "ktas": 97,  "fuel_flow_lph": 22.9 },
+            "isa":          { "power_percent": 69, "ktas": 92,  "fuel_flow_lph": 18.6 },
+            "isa_plus_30":  { "power_percent": 56, "ktas": 86,  "fuel_flow_lph": 15.1 }
+          },
+          {
+            "rpm": 2033,
+            "isa_minus_30": { "power_percent": 77, "ktas": 93,  "fuel_flow_lph": 20.8 },
+            "isa":          { "power_percent": 62, "ktas": 88,  "fuel_flow_lph": 16.7 },
+            "isa_plus_30":  { "power_percent": 50, "ktas": 81,  "fuel_flow_lph": 13.4 }
+          }
+        ]
+      },
+      {
+        "pressure_alt_ft": 2000,
+        "rows": [
+          {
+            "rpm": 2355,
+            "isa_minus_30": { "power_percent": 112, "ktas": 109, "fuel_flow_lph": 30.2 },
+            "isa":          { "power_percent": 93,  "ktas": 106, "fuel_flow_lph": 25.1 },
+            "isa_plus_30":  { "power_percent": 78,  "ktas": 101, "fuel_flow_lph": 21.0 }
+          },
+          {
+            "rpm": 2312,
+            "isa_minus_30": { "power_percent": 106, "ktas": 107, "fuel_flow_lph": 28.6 },
+            "isa":          { "power_percent": 88,  "ktas": 103, "fuel_flow_lph": 23.6 },
+            "isa_plus_30":  { "power_percent": 73,  "ktas": 99,  "fuel_flow_lph": 19.7 }
+          },
+          {
+            "rpm": 2265,
+            "isa_minus_30": { "power_percent": 100, "ktas": 105, "fuel_flow_lph": 27.0 },
+            "isa":          { "power_percent": 82,  "ktas": 100, "fuel_flow_lph": 22.2 },
+            "isa_plus_30":  { "power_percent": 68,  "ktas": 96,  "fuel_flow_lph": 18.4 }
+          },
+          {
+            "rpm": 2214,
+            "isa_minus_30": { "power_percent": 94, "ktas": 102, "fuel_flow_lph": 25.2 },
+            "isa":          { "power_percent": 76, "ktas": 98,  "fuel_flow_lph": 20.6 },
+            "isa_plus_30":  { "power_percent": 63, "ktas": 92,  "fuel_flow_lph": 17.0 }
+          },
+          {
+            "rpm": 2157,
+            "isa_minus_30": { "power_percent": 87, "ktas": 99,  "fuel_flow_lph": 23.4 },
+            "isa":          { "power_percent": 70, "ktas": 94,  "fuel_flow_lph": 19.0 },
+            "isa_plus_30":  { "power_percent": 58, "ktas": 88,  "fuel_flow_lph": 15.5 }
+          },
+          {
+            "rpm": 2094,
+            "isa_minus_30": { "power_percent": 80, "ktas": 96,  "fuel_flow_lph": 21.4 },
+            "isa":          { "power_percent": 64, "ktas": 90,  "fuel_flow_lph": 17.3 },
+            "isa_plus_30":  { "power_percent": 52, "ktas": 84,  "fuel_flow_lph": 13.9 }
+          },
+          {
+            "rpm": 2023,
+            "isa_minus_30": { "power_percent": 72, "ktas": 92,  "fuel_flow_lph": 19.4 },
+            "isa":          { "power_percent": 57, "ktas": 86,  "fuel_flow_lph": 15.5 },
+            "isa_plus_30":  { "power_percent": 46, "ktas": 77,  "fuel_flow_lph": 12.3 }
+          }
+        ]
+      },
+      {
+        "pressure_alt_ft": 4000,
+        "rows": [
+          {
+            "rpm": 2348,
+            "isa_minus_30": { "power_percent": 105, "ktas": 109, "fuel_flow_lph": 28.3 },
+            "isa":          { "power_percent": 87,  "ktas": 105, "fuel_flow_lph": 23.4 },
+            "isa_plus_30":  { "power_percent": 72,  "ktas": 100, "fuel_flow_lph": 19.5 }
+          },
+          {
+            "rpm": 2305,
+            "isa_minus_30": { "power_percent": 100, "ktas": 107, "fuel_flow_lph": 26.8 },
+            "isa":          { "power_percent": 82,  "ktas": 102, "fuel_flow_lph": 22.0 },
+            "isa_plus_30":  { "power_percent": 68,  "ktas": 97,  "fuel_flow_lph": 18.3 }
+          },
+          {
+            "rpm": 2257,
+            "isa_minus_30": { "power_percent": 94, "ktas": 104, "fuel_flow_lph": 25.2 },
+            "isa":          { "power_percent": 77, "ktas": 99,  "fuel_flow_lph": 20.6 },
+            "isa_plus_30":  { "power_percent": 63, "ktas": 94,  "fuel_flow_lph": 17.0 }
+          },
+          {
+            "rpm": 2206,
+            "isa_minus_30": { "power_percent": 88, "ktas": 101, "fuel_flow_lph": 23.6 },
+            "isa":          { "power_percent": 71, "ktas": 96,  "fuel_flow_lph": 19.2 },
+            "isa_plus_30":  { "power_percent": 58, "ktas": 90,  "fuel_flow_lph": 15.7 }
+          },
+          {
+            "rpm": 2148,
+            "isa_minus_30": { "power_percent": 81, "ktas": 98,  "fuel_flow_lph": 21.9 },
+            "isa":          { "power_percent": 65, "ktas": 93,  "fuel_flow_lph": 17.6 },
+            "isa_plus_30":  { "power_percent": 53, "ktas": 86,  "fuel_flow_lph": 14.3 }
+          },
+          {
+            "rpm": 2084,
+            "isa_minus_30": { "power_percent": 74, "ktas": 95,  "fuel_flow_lph": 20.0 },
+            "isa":          { "power_percent": 59, "ktas": 89,  "fuel_flow_lph": 16.0 },
+            "isa_plus_30":  { "power_percent": 47, "ktas": 80,  "fuel_flow_lph": 12.8 }
+          }
+        ]
+      },
+      {
+        "pressure_alt_ft": 6000,
+        "rows": [
+          {
+            "rpm": 2340,
+            "isa_minus_30": { "power_percent": 98, "ktas": 108, "fuel_flow_lph": 26.5 },
+            "isa":          { "power_percent": 81, "ktas": 103, "fuel_flow_lph": 21.8 },
+            "isa_plus_30":  { "power_percent": 67, "ktas": 98,  "fuel_flow_lph": 18.0 }
+          },
+          {
+            "rpm": 2296,
+            "isa_minus_30": { "power_percent": 93, "ktas": 106, "fuel_flow_lph": 25.1 },
+            "isa":          { "power_percent": 76, "ktas": 101, "fuel_flow_lph": 20.5 },
+            "isa_plus_30":  { "power_percent": 63, "ktas": 95,  "fuel_flow_lph": 16.9 }
+          },
+          {
+            "rpm": 2249,
+            "isa_minus_30": { "power_percent": 88, "ktas": 103, "fuel_flow_lph": 23.6 },
+            "isa":          { "power_percent": 71, "ktas": 98,  "fuel_flow_lph": 19.2 },
+            "isa_plus_30":  { "power_percent": 58, "ktas": 92,  "fuel_flow_lph": 15.7 }
+          },
+          {
+            "rpm": 2196,
+            "isa_minus_30": { "power_percent": 82, "ktas": 100, "fuel_flow_lph": 22.0 },
+            "isa":          { "power_percent": 66, "ktas": 95,  "fuel_flow_lph": 17.8 },
+            "isa_plus_30":  { "power_percent": 54, "ktas": 87,  "fuel_flow_lph": 14.4 }
+          }
+        ]
+      },
+      {
+        "pressure_alt_ft": 8000,
+        "rows": [
+          {
+            "rpm": 2331,
+            "isa_minus_30": { "power_percent": 92, "ktas": 107, "fuel_flow_lph": 24.8 },
+            "isa":          { "power_percent": 75, "ktas": 102, "fuel_flow_lph": 20.2 },
+            "isa_plus_30":  { "power_percent": 62, "ktas": 96,  "fuel_flow_lph": 16.7 }
+          },
+          {
+            "rpm": 2287,
+            "isa_minus_30": { "power_percent": 87, "ktas": 105, "fuel_flow_lph": 23.4 },
+            "isa":          { "power_percent": 71, "ktas": 99,  "fuel_flow_lph": 19.0 },
+            "isa_plus_30":  { "power_percent": 58, "ktas": 93,  "fuel_flow_lph": 15.6 }
+          },
+          {
+            "rpm": 2239,
+            "isa_minus_30": { "power_percent": 82, "ktas": 102, "fuel_flow_lph": 22.0 },
+            "isa":          { "power_percent": 66, "ktas": 96,  "fuel_flow_lph": 17.8 },
+            "isa_plus_30":  { "power_percent": 53, "ktas": 89,  "fuel_flow_lph": 14.4 }
+          },
+          {
+            "rpm": 2185,
+            "isa_minus_30": { "power_percent": 76, "ktas": 99,  "fuel_flow_lph": 20.5 },
+            "isa":          { "power_percent": 61, "ktas": 93,  "fuel_flow_lph": 16.4 },
+            "isa_plus_30":  { "power_percent": 49, "ktas": 84,  "fuel_flow_lph": 13.2 }
+          }
+        ]
+      },
+      {
+        "pressure_alt_ft": 10000,
+        "rows": [
+          {
+            "rpm": 2321,
+            "isa_minus_30": { "power_percent": 86, "ktas": 106, "fuel_flow_lph": 23.1 },
+            "isa":          { "power_percent": 69, "ktas": 100, "fuel_flow_lph": 18.7 },
+            "isa_plus_30":  { "power_percent": 57, "ktas": 93,  "fuel_flow_lph": 15.3 }
+          },
+          {
+            "rpm": 2277,
+            "isa_minus_30": { "power_percent": 81, "ktas": 104, "fuel_flow_lph": 21.8 },
+            "isa":          { "power_percent": 65, "ktas": 97,  "fuel_flow_lph": 17.6 },
+            "isa_plus_30":  { "power_percent": 53, "ktas": 89,  "fuel_flow_lph": 14.3 }
+          },
+          {
+            "rpm": 2227,
+            "isa_minus_30": { "power_percent": 76, "ktas": 101, "fuel_flow_lph": 20.5 },
+            "isa":          { "power_percent": 61, "ktas": 94,  "fuel_flow_lph": 16.4 },
+            "isa_plus_30":  { "power_percent": 49, "ktas": 84,  "fuel_flow_lph": 13.1 }
+          }
+        ]
+      }
+    ]
+  }
