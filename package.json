@@ -5,13 +5,13 @@
   "scripts": {
     "dev": "npx next dev",
     "build": "NEXT_PUBLIC_BASE_PATH=/tecnam_p2002jf_performances npx next build",
-    "build:ios": "npx next build",
     "export": "next build",
     "start": "npx next start",
     "lint": "npx next lint",
-    "ios:build": "npm run build:ios && npx cap sync ios",
+    "ios:build": "npm run build:ios && npx cap sync ios && node scripts/setup-ios-splash.js",
     "ios:open": "npx cap open ios",
-    "ios:sync": "npx cap sync ios"
+    "ios:sync": "npx cap sync ios && node scripts/setup-ios-splash.js",
+    "ios:setup-splash": "node scripts/setup-ios-splash.js"
   },
   "dependencies": {
     "@capacitor/core": "^6.0.0",
