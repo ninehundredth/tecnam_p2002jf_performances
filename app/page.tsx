@@ -15,6 +15,7 @@ import {
   type CruiseInputs,
   type CruiseResults,
 } from '../utils/calculations';
+import { getAssetPath } from '../utils/paths';
 
 interface InputState {
   weight: string;
@@ -270,28 +271,28 @@ export default function Home() {
             onClick={() => handleModeChange('takeoff')}
             className={`mode-button ${calculationMode === 'takeoff' ? 'mode-button-active' : 'mode-button-inactive'}`}
           >
-            <img src="/takeoff.svg" alt="Takeoff" className="mode-button-icon" />
+            <img src={getAssetPath('/takeoff.svg')} alt="Takeoff" className="mode-button-icon" />
             <span>Takeoff</span>
           </button>
           <button
             onClick={() => handleModeChange('landing')}
             className={`mode-button ${calculationMode === 'landing' ? 'mode-button-active' : 'mode-button-inactive'}`}
           >
-            <img src="/landing.svg" alt="Landing" className="mode-button-icon" />
+            <img src={getAssetPath('/landing.svg')} alt="Landing" className="mode-button-icon" />
             <span>Landing</span>
           </button>
           <button
             onClick={() => handleModeChange('rateOfClimb')}
             className={`mode-button ${calculationMode === 'rateOfClimb' ? 'mode-button-active' : 'mode-button-inactive'}`}
           >
-            <img src="/climb.svg" alt="Rate of Climb" className="mode-button-icon" />
+            <img src={getAssetPath('/climb.svg')} alt="Rate of Climb" className="mode-button-icon" />
             <span>Rate of Climb</span>
           </button>
           <button
             onClick={() => handleModeChange('cruise')}
             className={`mode-button ${calculationMode === 'cruise' ? 'mode-button-active' : 'mode-button-inactive'}`}
           >
-            <img src="/cruise.svg" alt="Cruise" className="mode-button-icon" />
+            <img src={getAssetPath('/cruise.svg')} alt="Cruise" className="mode-button-icon" />
             <span>Cruise</span>
           </button>
         </div>
@@ -1120,28 +1121,28 @@ export default function Home() {
           onClick={() => handleModeChange('takeoff')}
           className={`ios-tab-button ${calculationMode === 'takeoff' ? 'ios-tab-button-active' : ''}`}
         >
-          <img src="/takeoff.svg" alt="Takeoff" className="ios-tab-icon" />
+          <img src={getAssetPath('/takeoff.svg')} alt="Takeoff" className="ios-tab-icon" />
           <span className="ios-tab-label">Takeoff</span>
         </button>
         <button
           onClick={() => handleModeChange('landing')}
           className={`ios-tab-button ${calculationMode === 'landing' ? 'ios-tab-button-active' : ''}`}
         >
-          <img src="/landing.svg" alt="Landing" className="ios-tab-icon" />
+          <img src={getAssetPath('/landing.svg')} alt="Landing" className="ios-tab-icon" />
           <span className="ios-tab-label">Landing</span>
         </button>
         <button
           onClick={() => handleModeChange('rateOfClimb')}
           className={`ios-tab-button ${calculationMode === 'rateOfClimb' ? 'ios-tab-button-active' : ''}`}
         >
-          <img src="/climb.svg" alt="Rate of Climb" className="ios-tab-icon" />
+          <img src={getAssetPath('/climb.svg')} alt="Rate of Climb" className="ios-tab-icon" />
           <span className="ios-tab-label">Rate of Climb</span>
         </button>
         <button
           onClick={() => handleModeChange('cruise')}
           className={`ios-tab-button ${calculationMode === 'cruise' ? 'ios-tab-button-active' : ''}`}
         >
-          <img src="/cruise.svg" alt="Cruise" className="ios-tab-icon" />
+          <img src={getAssetPath('/cruise.svg')} alt="Cruise" className="ios-tab-icon" />
           <span className="ios-tab-label">Cruise</span>
         </button>
       </div>
