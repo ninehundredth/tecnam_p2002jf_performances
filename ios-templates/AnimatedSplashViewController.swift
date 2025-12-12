@@ -17,7 +17,7 @@ class AnimatedSplashViewController: UIViewController {
     
     private func setupSplashScreen() {
         // Set background color to match app theme
-        view.backgroundColor = UIColor(red: 102/255.0, green: 126/255.0, blue: 234/255.0, alpha: 1.0)
+        view.backgroundColor = UIColor(red: 6/255.0, green: 147/255.0, blue: 227/255.0, alpha: 1.0)
         
         // Create aircraft image view
         aircraftImageView = UIImageView()

@@ -270,25 +270,29 @@ export default function Home() {
             onClick={() => handleModeChange('takeoff')}
             className={`mode-button ${calculationMode === 'takeoff' ? 'mode-button-active' : 'mode-button-inactive'}`}
           >
-            Takeoff
+            <img src="/takeoff.svg" alt="Takeoff" className="mode-button-icon" />
+            <span>Takeoff</span>
           </button>
           <button
             onClick={() => handleModeChange('landing')}
             className={`mode-button ${calculationMode === 'landing' ? 'mode-button-active' : 'mode-button-inactive'}`}
           >
-            Landing
+            <img src="/landing.svg" alt="Landing" className="mode-button-icon" />
+            <span>Landing</span>
           </button>
           <button
             onClick={() => handleModeChange('rateOfClimb')}
             className={`mode-button ${calculationMode === 'rateOfClimb' ? 'mode-button-active' : 'mode-button-inactive'}`}
           >
-            Rate of Climb
+            <img src="/climb.svg" alt="Rate of Climb" className="mode-button-icon" />
+            <span>Rate of Climb</span>
           </button>
           <button
             onClick={() => handleModeChange('cruise')}
             className={`mode-button ${calculationMode === 'cruise' ? 'mode-button-active' : 'mode-button-inactive'}`}
           >
-            Cruise
+            <img src="/cruise.svg" alt="Cruise" className="mode-button-icon" />
+            <span>Cruise</span>
           </button>
         </div>
       </div>

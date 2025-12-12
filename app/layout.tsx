@@ -5,7 +5,6 @@ export const metadata: Metadata = {
   title: 'Tecnam P2002JF Performance Calculator',
   description: 'Calculate takeoff, landing, rate of climb, and cruise performance for Tecnam P2002JF aircraft',
   manifest: '/manifest.json',
-  themeColor: '#667eea',
   appleWebApp: {
     capable: true,
     statusBarStyle: 'black-translucent',
@@ -23,6 +22,7 @@ export const viewport: Viewport = {
   maximumScale: 1,
   userScalable: false,
   viewportFit: 'cover',
+  themeColor: '#0693e3',
 }
 
 export default function RootLayout({
