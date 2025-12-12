@@ -4,17 +4,27 @@
   "private": true,
   "scripts": {
     "dev": "npx next dev",
-    "build": "npx next build",
+    "build": "NEXT_PUBLIC_BASE_PATH=/tecnam_p2002jf_performances npx next build",
+    "build:ios": "npx next build",
     "export": "next build",
     "start": "npx next start",
-    "lint": "npx next lint"
+    "lint": "npx next lint",
+    "ios:build": "npm run build:ios && npx cap sync ios",
+    "ios:open": "npx cap open ios",
+    "ios:sync": "npx cap sync ios"
   },
   "dependencies": {
+    "@capacitor/core": "^6.0.0",
+    "@capacitor/ios": "^6.0.0",
+    "@capacitor/app": "^6.0.0",
+    "@capacitor/splash-screen": "^6.0.0",
+    "@capacitor/status-bar": "^6.0.0",
     "next": "^14.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@capacitor/cli": "^6.0.0",
     "@types/node": "^20.0.0",
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.0",

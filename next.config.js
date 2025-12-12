@@ -5,7 +5,9 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: '/tecnam_p2002jf_performances',
+  // Only use basePath for GitHub Pages (web deployment)
+  // For iOS app, basePath should be empty (served from root)
+  basePath: process.env.NEXT_PUBLIC_BASE_PATH || '',
   trailingSlash: true,
 }
 

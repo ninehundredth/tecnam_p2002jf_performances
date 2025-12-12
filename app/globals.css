@@ -205,7 +205,7 @@ body {
   color: #333;
 }
 
-/* Mode selector buttons container */
+/* Mode selector buttons container (for web) */
 .mode-selector-container {
   margin-top: 1rem;
   display: flex;
@@ -214,7 +214,7 @@ body {
   flex-wrap: wrap;
 }
 
-/* Mode selector button base styles */
+/* Mode selector button base styles (for web) */
 .mode-button {
   padding: 0.5rem 1.5rem;
   font-size: 1rem;
@@ -233,6 +233,150 @@ body {
 .mode-button-inactive {
   color: #999999;
   background: rgba(255, 255, 255, 0.1);
+}
+
+/* iOS-style bottom tab bar */
+.ios-tab-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  background: rgba(248, 248, 248, 0.8);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  border-top: 0.5px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: env(safe-area-inset-bottom);
+  padding-top: 8px;
+  z-index: 1000;
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.ios-tab-button {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 4px 4px 6px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.15s;
+  min-height: 49px;
+  -webkit-tap-highlight-color: transparent;
+  position: relative;
+}
+
+.ios-tab-button:active {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.ios-tab-icon {
+  width: 32px;
+  height: 32px;
+  display: block;
+  transition: opacity 0.15s;
+  opacity: 0.5;
+}
+
+.ios-tab-button-active .ios-tab-icon {
+  opacity: 1;
+}
+
+.ios-tab-label {
+  font-size: 10px;
+  font-weight: 500;
+  color: #8e8e93;
+  margin-top: 2px;
+  text-align: center;
+  line-height: 1.2;
+  letter-spacing: -0.24px;
+}
+
+.ios-tab-button-active .ios-tab-label {
+  color: #007aff;
+  font-weight: 600;
+}
+
+/* Calculate button wrapper */
+.calculate-button-wrapper {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+/* Add padding to content to prevent overlap with bottom tab bar */
+.content {
+  padding-bottom: 140px; /* Space for tab bar + calculate button + safe area */
+}
+
+/* Calculate button spacing on mobile */
+@media (max-width: 768px) {
+  .calculate-button-wrapper {
+    margin-bottom: 100px; /* Extra space to keep button above tab bar */
+  }
+  
+  .content {
+    padding-bottom: 160px; /* Extra space for calculate button on mobile */
+  }
+}
+
+/* Attribution footer */
+.attribution-footer {
+  padding: 1rem 2rem;
+  text-align: center;
+  background: #f8f9fa;
+  border-top: 1px solid #e0e0e0;
+  font-size: 0.75rem;
+  color: #666;
+}
+
+.attribution-link {
+  color: #667eea;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.attribution-link:hover {
+  color: #764ba2;
+  text-decoration: underline;
+}
+
+/* Smaller attribution on mobile */
+@media (max-width: 768px) {
+  .attribution-footer {
+    padding: 0.5rem 1rem;
+    font-size: 0.65rem;
+    padding-bottom: 80px; /* Space above bottom tab bar */
+  }
+}
+
+/* On larger screens, hide the iOS tab bar and show web buttons in header */
+@media (min-width: 769px) {
+  .ios-tab-bar {
+    display: none;
+  }
+  
+  .content {
+    padding-bottom: 2rem;
+  }
+}
+
+/* On mobile, hide header buttons and show bottom tab bar */
+@media (max-width: 768px) {
+  .header .mode-selector-container {
+    display: none;
+  }
+  
+  .ios-tab-bar {
+    display: flex;
+  }
+  
+  .content {
+    padding-bottom: 80px;
+  }
 }
 
 /* Calculate button */

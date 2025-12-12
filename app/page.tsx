@@ -93,6 +93,15 @@ export default function Home() {
   const [cruiseResults, setCruiseResults] = useState<CruiseResults | null>(null);
   const [showDebug, setShowDebug] = useState(false);
 
+  // Handle mode change and clear results
+  const handleModeChange = (mode: CalculationMode) => {
+    setCalculationMode(mode);
+    setResults(null);
+    setRateOfClimbResults(null);
+    setCruiseResults(null);
+    setShowDebug(false);
+  };
+
   const validateField = (field: keyof InputState, value: string): boolean => {
     if (field === 'runwaySurface') return true; // Select field is always valid
     
@@ -255,27 +264,28 @@ export default function Home() {
       <div className="header">
         <h1>Tecnam P2002JF</h1>
         <p>Performance Calculator</p>
+        {/* Web version - show buttons in header on larger screens */}
         <div className="mode-selector-container">
           <button
-            onClick={() => setCalculationMode('takeoff')}
+            onClick={() => handleModeChange('takeoff')}
             className={`mode-button ${calculationMode === 'takeoff' ? 'mode-button-active' : 'mode-button-inactive'}`}
           >
             Takeoff
           </button>
           <button
-            onClick={() => setCalculationMode('landing')}
+            onClick={() => handleModeChange('landing')}
             className={`mode-button ${calculationMode === 'landing' ? 'mode-button-active' : 'mode-button-inactive'}`}
           >
             Landing
           </button>
           <button
-            onClick={() => setCalculationMode('rateOfClimb')}
+            onClick={() => handleModeChange('rateOfClimb')}
             className={`mode-button ${calculationMode === 'rateOfClimb' ? 'mode-button-active' : 'mode-button-inactive'}`}
           >
             Rate of Climb
           </button>
           <button
-            onClick={() => setCalculationMode('cruise')}
+            onClick={() => handleModeChange('cruise')}
             className={`mode-button ${calculationMode === 'cruise' ? 'mode-button-active' : 'mode-button-inactive'}`}
           >
             Cruise
@@ -291,6 +301,7 @@ export default function Home() {
               <input
                 id="roc-weight"
                 type="number"
+                inputMode="decimal"
                 min={380}
                 max={600}
                 step="0.1"
@@ -312,6 +323,7 @@ export default function Home() {
               <input
                 id="roc-elevation"
                 type="number"
+                inputMode="numeric"
                 min={-100}
                 max={15000}
                 step="1"
@@ -333,6 +345,7 @@ export default function Home() {
               <input
                 id="roc-temperature"
                 type="number"
+                inputMode="decimal"
                 min={-30}
                 max={50}
                 step="0.1"
@@ -354,6 +367,7 @@ export default function Home() {
               <input
                 id="roc-qnh"
                 type="number"
+                inputMode="numeric"
                 min={700}
                 max={1200}
                 step="1"
@@ -390,6 +404,7 @@ export default function Home() {
               <input
                 id="cruise-elevation"
                 type="number"
+                inputMode="numeric"
                 min={-100}
                 max={15000}
                 step="1"
@@ -411,6 +426,7 @@ export default function Home() {
               <input
                 id="cruise-temperature"
                 type="number"
+                inputMode="decimal"
                 min={-30}
                 max={60}
                 step="0.1"
@@ -432,6 +448,7 @@ export default function Home() {
               <input
                 id="cruise-qnh"
                 type="number"
+                inputMode="numeric"
                 min={700}
                 max={1200}
                 step="1"
@@ -454,6 +471,7 @@ export default function Home() {
                 <input
                   id="cruise-kias"
                   type="number"
+                  inputMode="decimal"
                   min={50}
                   max={150}
                   step="0.1"
@@ -477,6 +495,7 @@ export default function Home() {
                 <input
                   id="cruise-ktas"
                   type="number"
+                  inputMode="decimal"
                   min={50}
                   max={150}
                   step="0.1"
@@ -500,6 +519,7 @@ export default function Home() {
                 <input
                   id="cruise-rpm"
                   type="number"
+                  inputMode="numeric"
                   min={2000}
                   max={2400}
                   step="1"
@@ -524,6 +544,7 @@ export default function Home() {
             <input
               id="weight"
               type="number"
+              inputMode="decimal"
               min={validation.weight.min}
               max={validation.weight.max}
               step="0.1"
@@ -558,6 +579,7 @@ export default function Home() {
             <input
               id="windDirection"
               type="number"
+              inputMode="numeric"
               min={validation.windDirection.min}
               max={validation.windDirection.max}
               step="1"
@@ -579,6 +601,7 @@ export default function Home() {
             <input
               id="windSpeed"
               type="number"
+              inputMode="decimal"
               min={validation.windSpeed.min}
               max={validation.windSpeed.max}
               step="0.1"
@@ -600,6 +623,7 @@ export default function Home() {
             <input
               id="runwaySlope"
               type="number"
+              inputMode="decimal"
               min={validation.runwaySlope.min}
               max={validation.runwaySlope.max}
               step="0.1"
@@ -622,6 +646,7 @@ export default function Home() {
             <input
               id="temperature"
               type="number"
+              inputMode="decimal"
               min={validation.temperature.min}
               max={validation.temperature.max}
               step="0.1"
@@ -643,6 +668,7 @@ export default function Home() {
             <input
               id="runwayElevation"
               type="number"
+              inputMode="numeric"
               min={validation.runwayElevation.min}
               max={validation.runwayElevation.max}
               step="1"
@@ -664,6 +690,7 @@ export default function Home() {
             <input
               id="qnh"
               type="number"
+              inputMode="numeric"
               min={validation.qnh.min}
               max={validation.qnh.max}
               step="1"
@@ -685,6 +712,7 @@ export default function Home() {
             <input
               id="runwayDirection"
               type="number"
+              inputMode="numeric"
               min={validation.runwayDirection.min}
               max={validation.runwayDirection.max}
               step="1"
@@ -703,28 +731,30 @@ export default function Home() {
         </div>
         )}
 
-        <button
-          onClick={handleCalculate}
-          disabled={
-            calculationMode === 'rateOfClimb' ? !isRateOfClimbFormValid() :
-            calculationMode === 'cruise' ? !isCruiseFormValid() :
-            !isFormValid()
-          }
-          className={`calculate-button ${
-            (
-              calculationMode === 'rateOfClimb' ? isRateOfClimbFormValid() :
-              calculationMode === 'cruise' ? isCruiseFormValid() :
-              isFormValid()
-            ) ? 'calculate-button-enabled' : 'calculate-button-disabled'
-          }`}
-        >
+        <div className="calculate-button-wrapper">
+          <button
+            onClick={handleCalculate}
+            disabled={
+              calculationMode === 'rateOfClimb' ? !isRateOfClimbFormValid() :
+              calculationMode === 'cruise' ? !isCruiseFormValid() :
+              !isFormValid()
+            }
+            className={`calculate-button ${
+              (
+                calculationMode === 'rateOfClimb' ? isRateOfClimbFormValid() :
+                calculationMode === 'cruise' ? isCruiseFormValid() :
+                isFormValid()
+              ) ? 'calculate-button-enabled' : 'calculate-button-disabled'
+            }`}
+          >
           Calculate {
             calculationMode === 'takeoff' ? 'Takeoff' :
             calculationMode === 'landing' ? 'Landing' :
             calculationMode === 'rateOfClimb' ? 'Rate of Climb' :
             'Cruise'
           } Performance
-        </button>
+          </button>
+        </div>
 
         {rateOfClimbResults && (
           <div className="results">
@@ -1078,6 +1108,53 @@ export default function Home() {
             )}
           </div>
         )}
+      </div>
+
+      {/* iOS-style bottom tab bar */}
+      <div className="ios-tab-bar">
+        <button
+          onClick={() => handleModeChange('takeoff')}
+          className={`ios-tab-button ${calculationMode === 'takeoff' ? 'ios-tab-button-active' : ''}`}
+        >
+          <img src="/takeoff.svg" alt="Takeoff" className="ios-tab-icon" />
+          <span className="ios-tab-label">Takeoff</span>
+        </button>
+        <button
+          onClick={() => handleModeChange('landing')}
+          className={`ios-tab-button ${calculationMode === 'landing' ? 'ios-tab-button-active' : ''}`}
+        >
+          <img src="/landing.svg" alt="Landing" className="ios-tab-icon" />
+          <span className="ios-tab-label">Landing</span>
+        </button>
+        <button
+          onClick={() => handleModeChange('rateOfClimb')}
+          className={`ios-tab-button ${calculationMode === 'rateOfClimb' ? 'ios-tab-button-active' : ''}`}
+        >
+          <img src="/climb.svg" alt="Rate of Climb" className="ios-tab-icon" />
+          <span className="ios-tab-label">Rate of Climb</span>
+        </button>
+        <button
+          onClick={() => handleModeChange('cruise')}
+          className={`ios-tab-button ${calculationMode === 'cruise' ? 'ios-tab-button-active' : ''}`}
+        >
+          <img src="/cruise.svg" alt="Cruise" className="ios-tab-icon" />
+          <span className="ios-tab-label">Cruise</span>
+        </button>
+      </div>
+
+      {/* Attribution footer */}
+      <div className="attribution-footer">
+        <p>
+          Icons by{' '}
+          <a
+            href="https://dryicons.com/icon/departures-4359"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="attribution-link"
+          >
+            DryIcons
+          </a>
+        </p>
       </div>
     </div>
   );
